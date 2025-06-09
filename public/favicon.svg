@@ -1,0 +1,11 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="32" cy="56" rx="22" ry="5" fill="#e5e7eb"/>
+  <rect x="6" y="24" width="52" height="20" rx="10" fill="#2563eb" stroke="#222" stroke-width="2"/>
+  <rect x="16" y="12" width="32" height="15" rx="7.5" fill="#3b82f6" stroke="#222" stroke-width="1.5"/>
+  <!-- Parabrisa claro -->
+  <rect x="24" y="17" width="16" height="7" rx="2.5" fill="#dbeafe"/>
+  <circle cx="18" cy="46" r="6" fill="#444"/>
+  <circle cx="46" cy="46" r="6" fill="#444"/>
+  <rect x="6" y="32" width="4" height="7" rx="1.7" fill="#fbbf24"/>
+  <rect x="54" y="32" width="4" height="7" rx="1.7" fill="#fbbf24"/>
+</svg>
