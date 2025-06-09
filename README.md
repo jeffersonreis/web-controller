@@ -26,22 +26,26 @@ Frontend minimalista em React + Tailwind CSS para o sistema de controle de acess
 
 ## Instale as dependências:
 
+```bash
 npm install
-### ou
-
+# ou
 yarn install
+```
 
-## InstaCrie um arquivo .env na raiz do projeto e adicione:
-VITE_API_BASE_URL=http://localhost:3000/api
+## Crie um arquivo .env na raiz do projeto e adicione:
+```bash
+echo "VITE_API_BASE_URL=http://localhost:3000/api" > .env
+```
 
 ## Rode o projeto em modo desenvolvimento:
+```bash
 npm run dev
-### ou
+# ou
 yarn dev
+```
 
 ## Acesse:
-http://localhost:5173 (ou a porta informada pelo terminal)
-
+[http://localhost:5173](http://localhost:5173) (ou a porta informada pelo terminal)
 
 # Estrutura de Pastas:
 ```plaintext
