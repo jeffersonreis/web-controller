@@ -1,54 +1,82 @@
-# React + TypeScript + Vite
+# Sistema de Controle de Acesso - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend minimalista em React + Tailwind CSS para o sistema de controle de acesso de veículos, desenvolvido como parte de um Trabalho de Conclusão de Curso (TCC).
 
-Currently, two official plugins are available:
+## Principais Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Login com autenticação JWT
+- Dashboards distintos para usuário normal e administrador
+- Gestão de veículos do usuário (adicionar, editar, visualizar, imagem)
+- Upload e visualização de imagem do veículo
+- Histórico de acessos do usuário (todos os carros ou por carro)
+- Dashboard de administrador com listagem, edição e exclusão de usuários
+- Histórico total de acessos (admin), com filtros de data e usuário
+- Interface responsiva e minimalista
+- Página 404 personalizada
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Axios](https://axios-http.com/)
+- [React Router](https://reactrouter.com/)
+- [react-hot-toast](https://react-hot-toast.com/)
+- [react-icons](https://react-icons.github.io/react-icons/)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Instale as dependências:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+npm install
+# ou
+yarn install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## InstaCrie um arquivo .env na raiz do projeto e adicione:
+VITE_API_BASE_URL=http://localhost:3000/api
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Rode o projeto em modo desenvolvimento:
+npm run dev
+# ou
+yarn dev
+
+## Acesse:
+http://localhost:5173 (ou a porta informada pelo terminal)
+
+
+## Estrutura de Pastas:
+src/
+  pages/
+    AdminDashboard.tsx
+    UserDashboard.tsx
+    Login.tsx
+    UserManagementPage.tsx
+    UserEditPage.tsx
+    TotalAccessHistoryPage.tsx
+    UserAccessHistoryPage.tsx
+    CarFormPage.tsx
+    CarEditPage.tsx
+  App.tsx
+  main.tsx
+  index.css
+
+
+## Observações
+- Para funcionamento pleno, o backend deve estar rodando e acessível no endereço definido no `.env`.
+- Certifique-se de que a variável `VITE_API_BASE_URL` aponta para a URL correta da API.
+- Consulte a documentação do backend para instruções de instalação e execução.
+- Em caso de erro de conexão, verifique se o backend está ativo e se não há bloqueios de firewall.
+
+
+## Telas implementadas
+- Login
+- Dashboard usuário
+- Dashboard admin
+- Cadastro e edição de carro
+- Histórico de acessos (usuário)
+- Histórico total de acessos (admin)
+- Listagem, edição e exclusão de usuários (admin)
+- Página 404 customizada
+
+
+## Licença
+Uso acadêmico. Projeto desenvolvido para fins de TCC.
+
