@@ -27,7 +27,8 @@ Frontend minimalista em React + Tailwind CSS para o sistema de controle de acess
 ## Instale as dependências:
 
 npm install
-# ou
+### ou
+
 yarn install
 
 ## InstaCrie um arquivo .env na raiz do projeto e adicione:
@@ -35,14 +36,14 @@ VITE_API_BASE_URL=http://localhost:3000/api
 
 ## Rode o projeto em modo desenvolvimento:
 npm run dev
-# ou
+### ou
 yarn dev
 
 ## Acesse:
 http://localhost:5173 (ou a porta informada pelo terminal)
 
 
-## Estrutura de Pastas:
+# Estrutura de Pastas:
 src/
   pages/
     AdminDashboard.tsx
@@ -77,6 +78,6 @@ src/
 - Página 404 customizada
 
 
-## Licença
+# Licença
 Uso acadêmico. Projeto desenvolvido para fins de TCC.
 
