@@ -44,6 +44,7 @@ http://localhost:5173 (ou a porta informada pelo terminal)
 
 
 # Estrutura de Pastas:
+```plaintext
 src/
   pages/
     AdminDashboard.tsx
@@ -58,7 +59,7 @@ src/
   App.tsx
   main.tsx
   index.css
-
+```
 
 ## Observações
 - Para funcionamento pleno, o backend deve estar rodando e acessível no endereço definido no `.env`.
